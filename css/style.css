@@ -1,0 +1,36 @@
+/* Gobales*/ 
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto 0 auto ;
+}
+
+/*Header */
+.site-header.inicio{
+    background: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 500px;
+}
+.barra{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+/* Navegacion */
+.navegacion a {
+    color: white;     
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+}
+/*seudoselector*/
+.navegacion a:hover{
+    color: yellow;
+}
+
+/*para el ultimo que tengo */
+.navegacion a:last-of-type{
+    margin: 0;
+}
