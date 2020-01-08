@@ -3,6 +3,7 @@ html{
 }
 h1{
     font-size: 4rem;
+    
 }
 h2{
     font-size: 3.8rem;
@@ -13,12 +14,28 @@ h3{
 h4{
     font-size: 2.8rem;
 }
+img{
+    max-width: 100%;
+}
+
 /*fuentes */
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
     font-size: 1.6rem;
+    line-height: 2;
+}
+/*Utilizades*/
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
+.fw-300{
+    font-weight: 300;    
+}
+.centrar-texto{
+    text-align: center;
+}
 
 /* Gobales*/ 
 .contenedor{
@@ -71,4 +88,26 @@ body{
 /*para el ultimo que tengo */
 .navegacion a:last-of-type{
     margin: 0;
+}
+
+/*Iconos*/
+.iconos-conocenos{
+    display: flex;
+    justify-content: space-between;
+}
+.iconos{
+    flex-basis: calc( 33.33% - 1rem);
+    text-align: center;
+}
+.iconos h3{
+    text-transform: uppercase;
+}
+
+/*anuncios*/
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+}
+.anuncio{
+    flex-basis: calc( 33.3% - 2rem);
 }
