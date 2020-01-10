@@ -1,5 +1,9 @@
 html{
     font-size: 62.5%; /* reset rems- 62.5%= 10px de 16px*/
+    box-sizing: border-box;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
 }
 h1{
     font-size: 4rem;
@@ -35,6 +39,9 @@ body{
 }
 .centrar-texto{
     text-align: center;
+}
+.d-block{
+    display: block!important;
 }
 
 /* Gobales*/ 
@@ -110,4 +117,72 @@ body{
 }
 .anuncio{
     flex-basis: calc( 33.3% - 2rem);
+    border: 1px solid grey; 
+    background-color: #F5F5F5;
+    
+}
+.contenido-anuncio{
+    padding: 2.5rem;
+}
+
+.contenido-anuncio h3, .contenido-anuncio p{
+    margin: 0;
+}
+.precio{
+    color: aqua;
+    font-weight: 750;
+}
+
+/* Botones*/
+.boton{
+    color: white;
+    font-weight: 750;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    display: inline-block;
+    margin: 3rem;
+    text-align: center;
+}
+.boton-dentro{
+    background-color: orangered;
+}
+.boton-fuera{
+    background-color: greenyellow;
+}
+.ver-todas{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+/* Contacto Home*/
+.imagen-cont{
+    background-image: url(../img/encuentra.jpg);    
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+.contenido-contacto{
+    flex: 1;
+    color: #Ffffff;
+}
+
+.contenido-contacto p{
+    font-size: 2rem;
+}
+.iconos-caracteristicas{
+    list-style: none;
+    padding: 0;
+    display: flex; 
+    justify-content: space-evenly;   
+}
+.iconos-caracteristicas li{
+    display: flex;
+    /*flex: 1;*/
+}
+.iconos-caracteristicas li img{    
+    margin-right: 2rem;
 }
